@@ -1,0 +1,43 @@
+{
+	"author": {
+		"email": "jo3mccain@icloud.com",
+		"name": "FL03",
+		"url": "https://github.com/FL03"
+	},
+	"dependencies": {
+		"@fontsource/fira-mono": "^4.5.9",
+		"@headlessui/vue": "^1.6.7",
+		"@heroicons/vue": "^1.0.6",
+		"cookie": "^0.5.0",
+		"dotenv": "^16.0.1",
+		"svelte-web3": "latest"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/kit": "next",
+		"@types/cookie": "^0.5.1",
+		"autoprefixer": "^10.4.8",
+		"postcss": "^8.4.16",
+		"svelte": "^3.46.0",
+		"svelte-check": "^2.7.1",
+		"svelte-preprocess": "^4.10.7",
+		"tailwindcss": "^3.1.8",
+		"typescript": "^4.7.4",
+		"vite": "^3.0.9"
+	},
+	"homepage": "https://github.com/FL03/template-sveltekit",
+	"license": "MIT",
+	"name": "@templates/template-sveltekit",
+	"repository": "https://github.com/FL03/template-sveltekit",
+	"readme": "README.md",
+	"scripts": {
+		"build": "vite build",
+		"check": "svelte-check --tsconfig ./jsconfig.json",
+		"check:watch": "svelte-check --tsconfig ./jsconfig.json --watch",
+		"dev": "vite dev",
+		"package": "svelte-kit package",
+		"preview": "vite preview"
+	},
+	"type": "module",
+	"version": "0.0.1"
+}
