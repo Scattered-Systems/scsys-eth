@@ -1,4 +1,4 @@
-# scattered-systems-com
+# @scsys-eth
 
 ## About 
 
