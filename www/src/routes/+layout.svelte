@@ -1,6 +1,6 @@
 <script>
 	import Footer from '$lib/footer/Footer.svelte';
-	import Navbar from '$lib/nav/Navbar.svelte';
+	import Navbar from '$lib/navbar/Navbar.svelte';
 	import { onMount } from 'svelte';
 	import { defaultEvmStores } from "svelte-web3";
 	import '../app.css';
@@ -21,18 +21,13 @@
 			"label":"Login"
 		}
 	]
-	onMount(
-		async () => {
-			defaultEvmStores.setProvider()
-		}
-	)
 </script>
 
 <div class="flex min-h-screen m-0 p-0">
 	<div class="flex-1 bg-slate-400 dark:bg-slate-800">
 		<Navbar brand = {brand} views={pages}/>
-		<div class="container mx-auto">
-			<main class="flex my-16 p-3">
+		<div class="container mx-auto my-16">
+			<main class="flex">
 				<slot />
 			</main>
 		</div>

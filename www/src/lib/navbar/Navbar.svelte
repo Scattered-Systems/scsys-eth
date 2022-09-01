@@ -36,9 +36,9 @@
 </script>
 
 <nav class="absolute flex items-center inset-x-0 top-0 z-40">
-  <div class="container mx-auto dark:bg-transparent dark:text-white bg-transparent p-3 mt-3 rounded-lg">
-    <div class="flex flex-wrap items-center">
-      <div class="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
+  <div class="bg-transparent container mt-3 mx-auto p-3 text-dark dark:text-white">
+    <div class="flex flex-1 flex-wrap items-center">
+      <div class="w-full relative flex justify-between lg:w-auto px-4 lg:static lg:block lg:justify-start">
         <a href="{brand.website}" class="flex items-center">
             <img src="{logo}" class="mr-3 h-6 sm:h-9" alt="{brand.tagline}">
             <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">{brand.name}</span>

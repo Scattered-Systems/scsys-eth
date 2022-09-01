@@ -9,10 +9,10 @@ RUN npm install &&\
 
 FROM builder-base as development
 
-EXPOSE 5173/tcp
+EXPOSE 5174/tcp
 CMD ["npm", "run", "dev", "--", "--host"]
 
 FROM builder-base as latest
 
-EXPOSE 4173/tcp
+EXPOSE 4174/tcp
 CMD ["npm", "run", "start", "--", "--host"]

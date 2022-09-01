@@ -4,6 +4,9 @@
     "name": "FL03",
     "url": "https://github.com/FL03"
   },
+  "dependencies": {
+    "@scsys/www": "^0.0.1"
+  },
   "homepage": "https://gitlab.com/scsys/scsys-eth",
   "license": "MIT",
   "name": "@scsys/root",
