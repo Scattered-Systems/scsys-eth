@@ -4,18 +4,20 @@
     "name": "FL03",
     "url": "https://github.com/FL03"
   },
-  "dependencies": {
-    "@scsys/www": "^0.0.1"
-  },
-  "homepage": "https://gitlab.com/scsys/scsys-eth",
+  "bugs": "https://gitlab.com/scsys/scsys-eth/-/issues",
+  "homepage": "https://scsys.eth.link/",
   "license": "MIT",
-  "name": "@scsys/root",
-  "readme": "https://gitlab.com/scsys/scsys-eth/#README.md",
+  "name": "@scsys/scsys-eth",
+  "readme": "https://gitlab.com/scsys/scsys-eth/#README",
   "repository": "https://gitlab.com/scsys/scsys-eth",
   "scripts": {
-    "build": "npm run www:build",
+    "build": "npm run app:build && npm run www:build",
     "dev": "npm run www:dev",
     "start": "npm run www:preview",
+    "app:build": "npm run build --workspaces=@scsys/app",
+    "app:dev": "npm run dev --workspaces=@scsys/app",
+    "app:install": "npm install --workspaces=@scsys/app",
+    "app:preview": "npm run preview --workspaces=@scsys/app",
     "www:build": "npm run build --workspaces=@scsys/www",
     "www:dev": "npm run dev --workspaces=@scsys/www",
     "www:install": "npm install --workspaces=@scsys/www",
@@ -23,6 +25,7 @@
   },
   "version": "0.0.1",
   "workspaces": [
+    "app",
     "www"
   ]
 }
