@@ -23,7 +23,7 @@
     "www:install": "npm install --workspaces=@scsys/www",
     "www:preview": "npm run preview --workspaces=@scsys/www"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "workspaces": [
     "app",
     "www"
