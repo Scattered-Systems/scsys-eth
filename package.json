@@ -7,7 +7,7 @@
   "readme": "https://gitlab.com/scsys/scsys-eth/#README",
   "repository": "https://gitlab.com/scsys/scsys-eth",
   "scripts": {
-    "build": "npm run app:build && npm run www:build",
+    "build": "npm run www:build",
     "dev": "npm run www:dev",
     "start": "npm run www:preview",
     "www:build": "npm run build --workspaces=@scsys/www",

@@ -1,6 +1,5 @@
 <script>
     import { page } from '$app/stores';
-	  import logo from './svelte-logo.svg';
     export let brand = {
       name: "",
       slug: "",
@@ -40,7 +39,7 @@
     <div class="flex flex-1 flex-wrap items-center">
       <div class="w-full relative flex justify-between lg:w-auto px-4 lg:static lg:block lg:justify-start">
         <a href="{brand.website}" class="flex items-center">
-            <img src="{logo}" class="mr-3 h-6 sm:h-9" alt="{brand.tagline}">
+            <img src="https://pzzld.eth.limo/media/img/Scattered-Systems-Logo.png" class="mr-3 h-6 sm:h-9" alt="{brand.tagline}">
             <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">{brand.name}</span>
         </a>
       </div>
