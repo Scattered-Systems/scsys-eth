@@ -1,9 +1,8 @@
 <script>
 	import Footer from '$lib/footer/Footer.svelte';
 	import Navbar from '$lib/navbar/Navbar.svelte';
-	import { onMount } from 'svelte';
-	import { defaultEvmStores } from "svelte-web3";
 	import '../app.css';
+
 	let brand = {
       name: "Portal",
       slug: "portal",
@@ -12,13 +11,13 @@
       website: ""
     }
 	let pages = [
+	    {
+			"endpoint": "/",
+			"label": "Home"
+		},
 		{
 			"endpoint": "/about", 
 			"label": "About"
-		}, 
-		{
-			"endpoint": "/login", 
-			"label":"Login"
 		}
 	]
 </script>
