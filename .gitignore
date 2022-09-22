@@ -1,8 +1,9 @@
-# Exceptions
-!**/default.config.*
-!**/*.env.example
-!**/*.config.js
-!**/*.config.cjs
+# Config
+**/config.*
+**/*.config.*
+
+**/*.env
+**/*.env.*
 
 # Directories
 **/__pycache__/
@@ -28,8 +29,6 @@
 **/*.bk
 **/*.bk.*
 
-**/.config/*.config.*
-
 **/*.csv
 **/*.csv.*
 
@@ -37,9 +36,6 @@
 **/*.db.*
 
 **/*.db-*.*
-
-**/*.env
-**/*.env.*
 
 **/*.lock
 **/*.lock.*
@@ -54,3 +50,9 @@
 
 **/*.zip
 **/*.zip.*
+
+# Exceptions
+!**/default.config.*
+!**/*.env.example
+!**/*.config.js
+!**/*.config.cjs
