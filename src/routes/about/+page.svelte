@@ -6,7 +6,6 @@
 <div class="container mx-auto">
 	<span>
 		<h1>
-
 		</h1>
 	</span>
 </div>

@@ -1,22 +1,33 @@
 {
-  "author": "FL03 <jo3mccain@icloud.com> (https://gitlab.com/FL03)",
-  "bugs": "https://gitlab.com/scsys/scsys-eth/-/issues",
-  "homepage": "https://scsys.eth.link/",
-  "license": "MIT",
-  "name": "@scsys/scsys-eth",
-  "readme": "https://gitlab.com/scsys/scsys-eth/#README",
-  "repository": "https://gitlab.com/scsys/scsys-eth",
-  "scripts": {
-    "build": "npm run www:build",
-    "dev": "npm run www:dev",
-    "start": "npm run www:preview",
-    "www:build": "npm run build --workspaces=@scsys/www",
-    "www:dev": "npm run dev --workspaces=@scsys/www",
-    "www:install": "npm install --workspaces=@scsys/www",
-    "www:preview": "npm run preview --workspaces=@scsys/www"
-  },
-  "version": "0.0.2",
-  "workspaces": [
-    "www"
-  ]
+	"author": "FL03 <jo3mccain@icloud.com> (https://gitlab.com/FL03)",
+	"bugs": "https://gitlab.com/scsys/domain/scsys-eth/-/issues",
+	"dependencies": {
+		"@fontsource/fira-mono": "^4.5.0",
+		"cookie": "^0.4.1"
+	},
+	"description": "",
+	"devDependencies": {
+		"@sveltejs/adapter-static": "next",
+		"@sveltejs/kit": "next",
+		"@types/cookie": "^0.5.1",
+		"autoprefixer": "^10.4.8",
+		"postcss": "^8.4.16",
+		"svelte": "^3.46.0",
+		"svelte-check": "^2.7.1",
+		"svelte-preprocess": "^4.10.7",
+		"tailwindcss": "^3.1.8",
+		"vite": "^3.1.0-beta.1"
+	},
+	"keywords": [],
+	"license": "MIT",
+	"name": "@scsys-eth/www",
+	"scripts": {
+		"build": "vite build",
+		"dev": "vite dev",
+		"preview": "vite preview"
+	},
+	"readme": "README.md",
+	"repository": "https://gitlab.com/scsys/domain/scsys-eth",
+	"type": "module",
+	"version": "0.0.2"
 }
