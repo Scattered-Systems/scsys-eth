@@ -1,4 +1,6 @@
 <script>
+	import Header from '$lib/header/Header.svelte';
+	import Text from '$lib/Text.svelte';
 
 </script>
 
@@ -7,10 +9,14 @@
 	<meta name="description" content="Welcome to the next generation of internet-based experiences" />
 </svelte:head>
 
-<div class="container mx-auto m-3 p-3">
-	<div class="flex text-xl text-dark dark:text-white">
-		<span class="text-xl text-bold text-dark dark:text-white text">
-			Scattered-Systems, LLC
-		</span>
+
+
+<div class="min-h-screen">
+	<Header/>
+	<Text size="xl" style="bold">
+		Scattered-Systems, LLC
+	</Text>
+	<div class="container mx-auto items-center">
+		
 	</div>
 </div>
