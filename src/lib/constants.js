@@ -4,7 +4,12 @@ export let info = {
     company: {
         name: "Scattered-Systems, LLC",
         slug: "scsys",
+        tagline: "Building the next generation of internet-based experiences",
         tags: ["Software", "Decentralized", "Blockchain", "Technology"]
+    },
+    misc: {
+        github: "scattered-systems",
+        twitter: "scsys_eth"
     },
     site: {
         endpoint: "https://scsys.eth.limo/",

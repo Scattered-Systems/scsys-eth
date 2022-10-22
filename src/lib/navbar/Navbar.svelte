@@ -14,7 +14,7 @@
     <div class="flex flex-1 flex-wrap items-center">
       <div class="w-full relative flex justify-between lg:w-auto px-4 lg:static lg:block lg:justify-start">
         <a href="{info.site.endpoint}" class="flex items-center">
-            <img src="https://pzzld.eth.limo/media/img/Scattered-Systems-Logo.png" class="mr-3 h-6 sm:h-9" alt="#">
+            <img src="https://pzzld.eth.limo/media/img/Scattered-Systems-Logo.png" class="mr-3 h-6 sm:h-9 rounded-full" alt="#">
             <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">{info.company.name}</span>
         </a>
       </div>
@@ -32,7 +32,7 @@
             <div class="container mx-auto">
               <a href="https://app.scsys.eth.limo">
                 <button type="button" class="border rounded-xl text-md font-semibold hover:opacity-75 px-3 py-2">
-                  App
+                  Connect
                 </button>
               </a>
             </div>

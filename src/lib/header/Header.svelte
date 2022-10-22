@@ -7,12 +7,10 @@
 
 </script>
 
-<header class="flex min-h-screen">
-	<div class="flex items-center m-3 p-3 text-black dark:text-white">
-		<div class="inline p-3 backdrop-blur-sm rounded-lg">
-			<span class="flex">Welcome to Scattered-Systems</span>
-			<span class="flex text-xl">{ props.company.tags }</span>
-		</div>
-		<img alt="#" class="flex p-3 rounded max-w-5xl rounded-lg" src="{header_image}"/>
+<header class="flex min-h-screen items-center justify-center m-3 p-3">
+	<div class="inline p-3 rounded-lg bg-gradient-to-r from-zinc-900">
+		<span class="flex text-2xl text-bold">Welcome to Scattered-Systems</span>
+		<span class="flex italic">{ props.company.tagline }</span>
 	</div>
+	<img alt="#" class=" p-3 rounded max-w-5xl rounded-lg" src="{header_image}"/>
 </header>
