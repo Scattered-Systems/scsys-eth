@@ -10,13 +10,12 @@
 </svelte:head>
 
 
-
-<div class="min-h-screen">
+<div class="">
 	<Header/>
-	<Text size="xl" style="bold">
-		Scattered-Systems, LLC
-	</Text>
+	
 	<div class="container mx-auto items-center">
-		
+		<Text size="xl" style="bold">
+			About Us
+		</Text>
 	</div>
 </div>

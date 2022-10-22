@@ -6,7 +6,7 @@
 </script>
 
 <div class="flex min-h-screen m-0 p-0">
-	<div class="flex-1 bg-slate-400 dark:bg-slate-800">
+	<div class="flex-1 text-dark dark:bg-zinc-900 dark:text-white">
 		<Navbar/>
 		<div class="container mx-auto my-16">
 			<main class="flex">
