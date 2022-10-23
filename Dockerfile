@@ -1,18 +1,19 @@
-FROM jo3mccain/node as builder-base
+FROM scsys/node:debian-lts as builder-base
 
 ADD . ./project
 WORKDIR /project
 
 COPY . .
-RUN npm install &&\
+RUN npm install && \
     npm run build
 
 FROM builder-base as development
 
-EXPOSE 5174/tcp
+EXPOSE 5173/tcp
+
 CMD ["npm", "run", "dev", "--", "--host"]
 
 FROM builder-base as latest
 
-EXPOSE 4174/tcp
+EXPOSE 4173/tcp
 CMD ["npm", "run", "start", "--", "--host"]
