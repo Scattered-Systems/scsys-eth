@@ -1,9 +1,14 @@
-FROM scsys/node:debian-lts as builder-base
+FROM node as builder-base
+
+RUN apt-get update -y && apt-get upgrade -y
+
+FROM builder-base as builder
 
 ADD . ./project
 WORKDIR /project
 
 COPY . .
+
 RUN npm install && \
     npm run build
 
