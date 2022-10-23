@@ -1,15 +1,8 @@
-# Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
 on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["master"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
@@ -21,7 +14,15 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # Single deploy job since we're just deploying
+  builder:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v3.5.1
+      - name: Setup NodeJs
+        with: 
+          node-version: ">=16.18.0"
+      - name: Build Static
+        run: npm install && npm run build
   deploy:
     environment:
       name: github-pages

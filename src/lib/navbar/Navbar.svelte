@@ -9,8 +9,8 @@
     }
 </script>
 
-<nav class="absolute bg-transparent flex flex-nowrap items-center justify-between inset-x-0 mt-3 p-3 top-0 z-40">
-  <div class="flex flex-initial">
+<nav class="absolute bg-transparent flex flex-nowrap items-center justify-between inset-x-0 mt-3 p-3 text-white top-0 w-full z-50">
+  <div class="flex flex-initial w-1/6">
     <div class="">
       <a href="{info.site.endpoint}" class="flex items-center">
         <img src="https://pzzld.eth.limo/media/img/Scattered-Systems-Logo.png" class="mr-3 h-6 sm:h-9 rounded-full" alt="#">
@@ -29,10 +29,9 @@
         {/each}
     </ul>
   </div>
-  <div class="inline-flex nowrap">
-    <div class=""></div>
-      <a class="border rounded-xl text-md font-semibold hover:opacity-75 px-3 py-2" href="https://github.com/scattered-systems" type="button">
-        Connect
-      </a>
+  <div class="flex justify-end w-1/6">
+    <button class="border rounded-xl text-md font-semibold hover:opacity-75 px-3 py-2" type="button">
+      <a href="https://github.com/scattered-systems">Connect</a>
+    </button>
   </div>
 </nav>
