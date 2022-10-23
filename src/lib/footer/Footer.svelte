@@ -3,7 +3,7 @@
 </script>
 
 
-<footer class="absolute bottom-0 flex w-full justify-between p-3">
+<footer class="bottom-0 relative flex w-full justify-between p-3">
     <div class="grid gap-4 grid-flow-col auto-cols-max auto-rows-max">
         <div>
             <ul class="list-none">

@@ -7,12 +7,11 @@
 
 <div class="flex bg-zinc-900 min-h-screen m-0 p-0 text-white">
 	<Navbar/>
-	<div class="container mx-auto my-16">
-		<main class="flex">
+	<div class="flex items-center justify-center py-16">
+		<main class="container mx-auto">
 			<slot />
 		</main>
 	</div>
-	<Footer/>
 </div>
 
 <style>

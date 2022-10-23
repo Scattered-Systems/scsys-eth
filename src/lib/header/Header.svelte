@@ -7,9 +7,11 @@
 
 </script>
 
-<header class="flex flex-wrap min-h-full items-center">
-	<img alt="#" class="flex w-sm p-3 rounded rounded-lg" src="{header_image}"/>
-	<div class="flex grow min-w-md">
+<header class="flex flex-wrap min-h-full justify-center">
+	<div class="flex flex-initial max-w-lg">
+		<img alt="#" class="block w-sm p-3 rounded-full" src="{header_image}"/>
+	</div>
+	<div class="flex grow min-w-md items-center justify-center">
 		<div class="inline p-3 rounded-lg bg-gradient-to-r from-zinc-900">
 			<span class="flex text-2xl text-bold">
 				Welcome to Scattered-Systems
