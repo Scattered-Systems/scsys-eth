@@ -5,14 +5,14 @@
 
 </script>
 
-<div class="flex min-h-screen m-0 p-0">
-	<div class="flex-1 text-dark dark:bg-zinc-900 dark:text-white">
-		<Navbar/>
-		<main class="container mx-auto my-16">
+<div class="flex bg-zinc-900 min-h-screen m-0 p-0 text-white">
+	<Navbar/>
+	<div class="container mx-auto my-16">
+		<main class="flex">
 			<slot />
 		</main>
-		<Footer/>
 	</div>
+	<Footer/>
 </div>
 
 <style>

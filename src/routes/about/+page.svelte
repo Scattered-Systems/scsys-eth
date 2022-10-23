@@ -3,7 +3,7 @@
 	<meta name="description" content="About this app" />
 </svelte:head>
 
-<div class="flex min-h-full p-3">
+<div class="flex min-h-full p-3 prose">
 	<span>
 		The ecosystem represents a wholistic commitment to the user and to securing our digital futures. Each proposed solution is a highly optimized, well researched implementation 
 		of cutting-edge technologies. We hope to provide the foundation for a truly free digital future where users are simply limited by their creativity and finally fulfilling 
