@@ -1,24 +1,25 @@
-FROM node as builder-base
+FROM node:18.12.1 as builder-base
 
 RUN apt-get update -y && apt-get upgrade -y
 
 FROM builder-base as builder
 
-ADD . ./project
-WORKDIR /project
+ADD . /workspace
+WORKDIR /workspace
 
 COPY . .
+RUN npm install && npm run build
 
-RUN npm install && \
-    npm run build
+FROM builder as development
 
-FROM builder-base as development
+EXPOSE 3000
+CMD [ "npm", "run", "start" ]
 
-EXPOSE 5173/tcp
+FROM node:18.12.1-slim
 
-CMD ["npm", "run", "dev", "--", "--host"]
+COPY --from=builder /workspace/build /app/build
 
-FROM builder-base as latest
+WORKDIR /app
 
-EXPOSE 4173/tcp
-CMD ["npm", "run", "start", "--", "--host"]
+EXPOSE 3000
+CMD ["node", "build/index.js"]

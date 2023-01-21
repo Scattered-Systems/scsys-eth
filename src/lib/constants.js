@@ -1,8 +1,8 @@
 
 export let info = {
-    authors: ["FL03 <jo3mccain@icloud.com> (https://gitlab.com/FL03)"],
+    authors: ["FL03 <jo3mccain@icloud.com> (https://github.com/FL03)"],
     company: {
-        name: "Scattered-Systems, LLC",
+        name: "Scattered-Systems, DAO LLC",
         slug: "scsys",
         tagline: "Building the next generation of internet-based experiences",
         tags: ["Software", "Decentralized", "Blockchain", "Technology"]
@@ -13,7 +13,8 @@ export let info = {
     },
     site: {
         endpoint: "https://scsys.eth.limo/",
-        logo: "https://pzzld.eth.limo/media/assets/Scattered-Systems-Logo.png",
+        logo: "https://scsys.eth.limo/media/assets/Scattered-Systems-Logo.png",
+        title: "Puzzled",
         map: [
             {
                 endpoint: "/",

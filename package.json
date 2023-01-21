@@ -1,33 +1,41 @@
 {
 	"author": "FL03 <jo3mccain@icloud.com> (https://gitlab.com/FL03)",
-	"bugs": "https://gitlab.com/scsys/domain/scsys-eth/-/issues",
+	"bugs": "https://github.com/scattered-systems/scsys-eth/issues",
 	"dependencies": {
 		"@fontsource/fira-mono": "^4.5.0",
-		"cookie": "^0.5.0"
+		"cookie": "^0.4.1",
+		"svelte-web3": "latest"
 	},
-	"description": "",
+	"description": "This application is written for the company landing page",
 	"devDependencies": {
+		"@sveltejs/adapter-node": "next",
 		"@sveltejs/adapter-static": "next",
 		"@sveltejs/kit": "next",
+		"@tailwindcss/forms": "^0.5.3",
+		"@tailwindcss/typography": "^0.5.8",
 		"@types/cookie": "^0.5.1",
 		"autoprefixer": "^10.4.8",
 		"postcss": "^8.4.16",
 		"svelte": "^3.46.0",
-		"svelte-check": "^3.0.1",
-		"svelte-preprocess": "^5.0.0",
+		"svelte-check": "^2.7.1",
+		"svelte-preprocess": "^4.10.7",
 		"tailwindcss": "^3.1.8",
-		"vite": "^4.0.1"
+		"typescript": "^4.7.4",
+		"vite": "beta"
 	},
 	"keywords": [],
-	"license": "MIT",
+	"license": "Apache-2.0",
 	"name": "@scsys-eth/www",
 	"scripts": {
+		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
 		"build": "vite build",
-		"dev": "vite dev",
-		"preview": "vite preview"
+		"dev": "vite dev --host --port 3000",
+		"start": "node build/index.js",
+		"preview": "vite preview --host --port 3000"
 	},
 	"readme": "README.md",
-	"repository": "https://gitlab.com/scsys/domain/scsys-eth",
+	"repository": "https://github.com/scattered-systems/scsys-eth",
 	"type": "module",
 	"version": "0.0.2"
 }

@@ -1,31 +1,17 @@
 <script>
-	import Footer from '$lib/footer/Footer.svelte';
-	import Navbar from '$lib/navbar/Navbar.svelte';
-	import "$lib/app.css";
+	import { Footer, Navbar } from '$lib';
+	import '../app.css';
+
+	export let banner = "SCSYS";
 </script>
 
-<Navbar/>
-<div class="application bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-900 text-white">
-	<div class="flex flex-auto items-center justify-center mt-16 min-h-full">
-		<main class="container mx-auto min-h-full">
-			<slot />
+<div class="bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-900 flex flex-col items-center justify-center m-0 p-0 z-0 min-h-screen min-w-full max-w-screen">
+	<Navbar name={banner}>
+	</Navbar>
+	<div class="flex flex-col grow items-center justify-center min-h-full max-h-screen min-w-full max-w-screen">
+		<main class="container mx-auto">
+			<slot/>
 		</main>
-		
 	</div>
+	<Footer/>
 </div>
-<Footer/>
-
-<style>
-	@import '@fontsource/fira-mono';
-	@tailwind base;
-	@tailwind components;
-	@tailwind utilities;
-
-	.application {
-		display: flex;
-		flex-direction: column;
-		margin: 0;
-		min-height: 100vh;
-		padding: 0;
-	}
-</style>
