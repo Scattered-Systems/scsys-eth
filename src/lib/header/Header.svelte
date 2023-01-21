@@ -1,5 +1,5 @@
 <script>
-    import img from '$lib/assets/media/AbstractBlocks.png';
+    import img from '$lib/assets/media/HeroImage.webp';
     export let title = "Welcome to Puzzled";
     export let subtitle = "";
 </script>

@@ -1,8 +1,9 @@
 <script>
-    export let company = "Scattered-Systems, DAO LLC";
-    export let contact = "";
-    export let github = "FL03";
-    export let twitter = "jo3mccain";
+    import {info} from "$lib/constants.js";
+    let company = info.company.name;
+    let contact = "";
+    let github = info.misc.github;
+    let twitter = info.misc.twitter;
 
 </script>
 
@@ -21,7 +22,7 @@
             <a href="https://twitter.com/{twitter}">Twitter</a>
         </li>
         <li class="hover:italic hover:text-underline">
-            <a href="https://github.com/FL03/pzzld-eth/blob/main/LICENSE" class="mr-4 hover:underline md:mr-6">Licensing</a>
+            <a href="https://github.com/{github}/scsys-eth/blob/main/LICENSE" class="mr-4 hover:underline md:mr-6">Licensing</a>
         </li>
         <!-- <li>
             <a href="{contact}" class="hover:underline">Contact</a>
